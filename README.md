@@ -10,6 +10,21 @@ This project demonstrates distributed data analysis on IMDB datasets using Apach
 - AWS S3 (data storage)
 - Matplotlib (visualizations)
 
+# Data Sources:
+
+- actors.csv: Contains information about actors, including their primary name, birth year, and filmography.
+- genres.csv: Links movies to their corresponding genres and release years.
+- movie_actors.csv: Connects actors to the movies they have participated in, specifying their roles and job titles.
+- movie_ratings.csv: Stores average ratings and vote counts for each movie.
+
+# Methodology:
+
+- Load the data into Spark SQL DataFrames.
+- Perform data cleaning and pre-processing as necessary.
+- Join the DataFrames based on common identifiers (e.g., tconst) to combine information.
+- Utilize Spark SQL functions and Python libraries (e.g., pandas) for data manipulation and analysis.
+- Calculate descriptive statistics, perform aggregations, and apply data visualization techniques to present findings.
+
 # Artifacts:
 
 - Project2_Analysis.ipynb: Jupyter Notebook with code and output
